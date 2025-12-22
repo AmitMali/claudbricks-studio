@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter_Tight, Geist } from "next/font/google";
 import "./globals.css";
-
+import Navbar from "@/components/Navbar";
 // Font for Headlines: Bold & Professional
 const interTight = Inter_Tight({
   subsets: ["latin"],
@@ -45,7 +45,7 @@ export default function RootLayout({
         className={`${interTight.variable} ${geistSans.variable} font-sans antialiased bg-background text-foreground`}
         suppressHydrationWarning // <--- Add this here too
       >
-        {/* We will insert the Navbar here in the next step */}
+        <Navbar />
         <main className="min-h-screen flex flex-col">{children}</main>
 
         {/* JSON-LD for Search Engines */}
