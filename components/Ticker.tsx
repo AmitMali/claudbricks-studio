@@ -29,8 +29,8 @@ export default function Ticker() {
       </div>
 
       {/* High-end edge fades to prevent "harsh" cuts on the sides */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-48 bg-gradient-to-r from-black via-black/80 to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-48 bg-gradient-to-l from-black via-black/80 to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-48 bg-linear-to-r from-black via-black/80 to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-48 bg-linear-to-l from-black via-black/80 to-transparent" />
     </div>
   );
 }

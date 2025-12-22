@@ -15,11 +15,11 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-[100] p-4 md:p-6">
+    <nav className="fixed top-0 left-0 right-0 z-100 p-4 md:p-6">
       <div className="mx-auto max-w-7xl">
         <div className="flex items-center justify-between px-5 py-3 rounded-full border border-zinc-800/50 bg-zinc-950/80 backdrop-blur-xl shadow-2xl">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 z-[110]">
+          <Link href="/" className="flex items-center gap-2 z-110">
             <motion.div
               whileHover={{ rotate: 180 }}
               className="h-6 w-6 bg-[#00FFAB] rounded-md shadow-[0_0_15px_rgba(0,255,171,0.4)]"
@@ -90,7 +90,7 @@ export default function Navbar() {
 
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 text-zinc-400 hover:text-white z-[110]"
+              className="md:hidden p-2 text-zinc-400 hover:text-white z-110"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

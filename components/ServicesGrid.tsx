@@ -67,7 +67,7 @@ export default function ServicesGrid() {
                   y: e.clientY - rect.top,
                 });
               }}
-              className="relative group overflow-hidden rounded-[2.5rem] border border-white/5 bg-zinc-950/40 p-[1px] backdrop-blur-3xl"
+              className="relative group overflow-hidden rounded-[2.5rem] border border-white/5 bg-zinc-950/40 p-px backdrop-blur-3xl"
             >
               {/* Interactive Spotlight Overlay */}
               <div
@@ -79,8 +79,8 @@ export default function ServicesGrid() {
 
               <div className="h-full w-full rounded-[2.4rem] bg-zinc-900/60 p-8 flex flex-col justify-between relative overflow-hidden z-10">
                 {/* Background Decoration Layers */}
-                <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#00FFAB_1.5px,transparent_1px)] [background-size:24px_24px]" />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#00FFAB]/5 to-transparent h-24 w-full animate-scan pointer-events-none" />
+                <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#00FFAB_1.5px,transparent_1px)] bg-size-[24px_24px]" />
+                <div className="absolute inset-0 bg-linear-to-b from-transparent via-[#00FFAB]/5 to-transparent h-24 w-full animate-scan pointer-events-none" />
 
                 <div>
                   <div className="flex justify-between items-start mb-10">

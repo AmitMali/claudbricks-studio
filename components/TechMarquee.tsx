@@ -21,8 +21,8 @@ export default function TechMarquee() {
   return (
     <div className="relative py-20 overflow-hidden bg-zinc-950">
       {/* Faded Edges for Depth */}
-      <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-zinc-950 to-transparent z-10" />
-      <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-zinc-950 to-transparent z-10" />
+      <div className="absolute inset-y-0 left-0 w-32 bg-linear-to-r from-zinc-950 to-transparent z-10" />
+      <div className="absolute inset-y-0 right-0 w-32 bg-linear-to-l from-zinc-950 to-transparent z-10" />
 
       <div className="flex select-none overflow-hidden">
         <motion.div
@@ -48,7 +48,7 @@ export default function TechMarquee() {
 
       {/* Decorative Blueprint Line */}
       <div className="max-w-7xl mx-auto px-6 mt-12">
-        <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+        <div className="h-px w-full bg-linear-to-r from-transparent via-white/10 to-transparent" />
         {/* Technical Metadata Footer for the Section */}
         <div className="mt-4 flex items-center gap-4 text-[10px] font-mono text-zinc-500">
           <div className="flex items-center gap-1">
