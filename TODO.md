@@ -1,11 +1,17 @@
 # Claudbricks Studio Roadmap
 
-## 🚀 Hero Section [Current Focus]
+## 🚀 Hero Section
 
 - [x] High-performance UI with Teal Glow
 - [x] Animated "Breeze" Background Orbs
 - [x] Framework-agnostic "Engineering" Copy
 - [ ] Finalize Button Hover States
+
+## Authority Section
+
+- [x] Infinite Hybrid Ticker
+- [x] Hover to Pause interaction
+- [x] Glassmorphism Styling
 
 ## 🛠️ Backlog (Engineering Ideas)
 
