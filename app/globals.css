@@ -12,6 +12,17 @@
   /* Typography */
   --font-display: var(--font-inter-tight), ui-sans-serif, system-ui;
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui;
+  /* animation*/
+  --animate-infinite-scroll: infinite-scroll 35s linear infinite;
+
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 @layer base {
