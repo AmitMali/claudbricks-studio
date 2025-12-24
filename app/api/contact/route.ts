@@ -8,12 +8,23 @@ export async function POST(req: Request) {
     const { name, email, solution, message } = await req.json();
 
     const data = await resend.emails.send({
-      from: "ClaudBricks <onboarding@resend.dev>",
+      from: "ClaudBricks Website Inquiry <inquiry@claudbricks.com>",
       to: "hello@claudbricks.com",
       subject: `New Project Inquiry: ${solution}`,
-      html: `<p><strong>Name:</strong> ${name}</p>
-      <br/<p><strong>Message:</strong> ${message}</p><br/>
-      <p><strong>Email:${email}</strong>`,
+      html: `<div style="font-family: 'Courier New', Courier, monospace; background-color: #000; color: #fff; padding: 40px; border: 1px solid #00FFAB;">
+      <h2 style="color: #000; text-transform: uppercase;">Incoming_Lead_Detected</h2>
+      <p style="color: #666;">TIMESTAMP: ${new Date().toISOString()}</p>
+      <hr style="border: 0; border-top: 1px solid #333; margin: 20px 0;" />
+      
+      <p><strong style="color: #000;">SENDER:</strong> ${name}</p>
+      <p><strong style="color: #000;">CONTACT:</strong> ${email}</p>
+      <p><strong style="color: #000;">SOLUTION:</strong> ${solution}</p>
+      
+      <div style="margin-top: 20px; padding: 20px; background: #111; border-radius: 8px;">
+        <p style="color: #000; margin-bottom: 10px;">MESSAGE_BODY:</p>
+        <p style="line-height: 1.6;">${message}</p>
+      </div>
+    </div>`,
     });
 
     // Handle Resend-specific errors (like limit reached)
