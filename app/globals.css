@@ -72,3 +72,7 @@
 @utility bg-grid-white {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='white' stroke-opacity='0.03'%3E%3Cpath d='M0 .5H31.5V32'/%3E%3C/svg%3E");
 }
+.outline-text {
+  -webkit-text-stroke: 1px #00ffab;
+  color: transparent;
+}
