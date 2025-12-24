@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Github, Twitter, Linkedin, Terminal, Cpu, Globe } from "lucide-react";
 
 export default function Footer() {
-  // Simply initialize with the current year - no effect needed
   const currentYear = "2025";
   return (
     <footer className="bg-black border-t border-white/5 pt-20 pb-10 px-6">
