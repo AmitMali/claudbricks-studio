@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter_Tight, Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 // Font for Headlines: Bold & Professional
 const interTight = Inter_Tight({
   subsets: ["latin"],
@@ -47,7 +48,7 @@ export default function RootLayout({
       >
         <Navbar />
         <main className="min-h-screen flex flex-col">{children}</main>
-
+        <Footer />
         {/* JSON-LD for Search Engines */}
         <script
           type="application/ld+json"

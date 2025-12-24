@@ -16,5 +16,5 @@
 
 ## 🎨 Navigation & Branding
 
-- [ ] **Glassmorphism Navbar**: Sticky header with high-end background blur.
+- [x] **Glassmorphism Navbar**: Sticky header with high-end background blur.
 - [ ] **Logo Refinement**: Ensure SVG scaling is perfect for high-DPI screens.

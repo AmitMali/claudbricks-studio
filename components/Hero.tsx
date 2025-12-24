@@ -38,7 +38,7 @@ export default function Hero() {
       </div>
 
       {/* 2. Engineering Grid */}
-      <div className="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:45px_45px] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_50%,#000_75%,transparent_100%)]" />
+      <div className="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[45px_45px] mask-[radial-gradient(ellipse_80%_60%_at_50%_50%,#000_75%,transparent_100%)]" />
 
       <div className="relative z-10 w-full max-w-7xl px-4 text-center">
         <motion.div
@@ -57,7 +57,7 @@ export default function Hero() {
 
           <h1 className="font-display text-5xl md:text-8xl font-bold tracking-tighter leading-[0.85] mb-8 text-white">
             Search Visibility <br />{" "}
-            <span className="bg-gradient-to-r from-[#00FFAB] to-[#008F60] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[#00FFAB] to-[#008F60] bg-clip-text text-transparent">
               By Design.
             </span>
           </h1>
