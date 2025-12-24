@@ -1,6 +1,8 @@
 "use client";
 import WebDevHero from "@/components/services/WebDevHero";
 import { motion } from "framer-motion";
+import { ArrowRight, Zap } from "lucide-react";
+import Link from "next/link";
 import {
   Code2,
   ShoppingBag,
@@ -182,6 +184,40 @@ export default function WebDevPage() {
                 </p>
               </div>
             ))}
+          </div>
+        </section>
+        <section className="py-24 px-6 relative overflow-hidden">
+          <div className="max-w-5xl mx-auto rounded-[3rem] bg-[#00FFAB] p-12 md:p-20 text-center relative overflow-hidden group">
+            {/* Background Decorative Pattern */}
+            <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#000_1.5px,transparent_1px)] bg-size-[20px_20px]" />
+
+            <div className="relative z-10 space-y-8">
+              <motion.div
+                initial={{ scale: 0.9, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black/10 border border-black/5 text-black font-mono text-[10px] uppercase tracking-widest"
+              >
+                <Zap size={14} fill="currentColor" /> Ready_for_Deployment
+              </motion.div>
+
+              <h2 className="text-4xl md:text-7xl font-black text-black italic uppercase tracking-tighter leading-[0.9]">
+                Build your <br /> Digital Fortress.
+              </h2>
+
+              <p className="text-black/70 text-lg md:text-xl max-w-xl mx-auto font-medium">
+                Stop building websites. Start deploying engineering-grade
+                infrastructure that drives results.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                <Link
+                  href="/contact"
+                  className="bg-black text-white px-10 py-5 rounded-2xl font-black italic uppercase text-sm flex items-center justify-center gap-2 hover:scale-105 transition-transform"
+                >
+                  Initialize Project <ArrowRight size={18} />
+                </Link>
+              </div>
+            </div>
           </div>
         </section>
       </div>
